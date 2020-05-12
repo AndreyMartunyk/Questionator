@@ -1,0 +1,24 @@
+﻿@{ 
+    Layout = null; 
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header><div><h2>Header2</h2></div></header>
+    <div class="main-container">
+        @RenderBody();
+    </div>
+   
+<footer>
+    <h3 class="redy">Footer</h3>
+    @RenderSection("Footer", false);
+</footer>
+</body>
+</html>
